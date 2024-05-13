@@ -104,7 +104,9 @@ function App() {
       county.price = originalPrice.price
       let pricee = total - originalPrice.price
       setTotal(pricee)
-      bucket = bucket.filter (el => el.id != e.target.id)
+      const buklet = []
+      bucket.forEach(e => buklet.push(e))
+      bucket = buklet.filter (el => el.id != e.target.id)
       setBucket(bucketL - 1)
       console.log(originalPrice)
       originalPrice.show1 = 'show'
