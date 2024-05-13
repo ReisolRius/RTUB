@@ -47,7 +47,7 @@ function App() {
         changeBtn.show1 = 'show'
         changeBtn.show2 = 'hide'
       }
-      goodsyList = goodsyList.filter(el => { return (el.id != -1)})
+      // goodsyList = goodsyList.filter(el => { return (el.id != -1)})
       console.log(goodsyList)
       let totalPrice = bucket.map(e => {
         return (e.price)
