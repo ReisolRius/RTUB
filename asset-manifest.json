@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/RTUB/static/css/main.992bfb23.css",
-    "main.js": "/RTUB/static/js/main.17ede59c.js",
+    "main.js": "/RTUB/static/js/main.c0ea090c.js",
     "static/js/453.645b0597.chunk.js": "/RTUB/static/js/453.645b0597.chunk.js",
     "static/media/logo.svg": "/RTUB/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/RTUB/index.html",
     "main.992bfb23.css.map": "/RTUB/static/css/main.992bfb23.css.map",
-    "main.17ede59c.js.map": "/RTUB/static/js/main.17ede59c.js.map",
+    "main.c0ea090c.js.map": "/RTUB/static/js/main.c0ea090c.js.map",
     "453.645b0597.chunk.js.map": "/RTUB/static/js/453.645b0597.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.992bfb23.css",
-    "static/js/main.17ede59c.js"
+    "static/js/main.c0ea090c.js"
   ]
 }
