@@ -149,7 +149,7 @@ function App() {
           ))
         }
       <div className='bucketIco' onClick={showBucket}>
-        <img src='/posters/buck.png'></img>
+        <img src='/Buklet/posters/buck.png'></img>
         <p>{bucketL}</p>
       </div>
       <div className={isActive ? "bucket" : "hide"}>
