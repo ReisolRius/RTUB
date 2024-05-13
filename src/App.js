@@ -21,6 +21,7 @@ function App() {
 
   const goodsList = []
   goods.forEach(e => goodsList.push(e))
+  
   const goBucket = (e) => {
     let good = goodsList.filter(good => {
            return (good.id.includes(e.target.id))
@@ -36,10 +37,14 @@ function App() {
    }
 
   useEffect(() => {
+    console.log(rBucket)
+    console.log(bucket)
+  }, [rBucket])
+
+  useEffect(() => {
     if (goody != '') {
       bucket.push(goody) 
       setRBucket(bucket)
-      console.log(goodsList)
       setBucket(bucketL + 1)
       setGoody('')
       if (changeBtn.show1 == 'show') {
@@ -50,7 +55,6 @@ function App() {
         changeBtn.show2 = 'hide'
       }
 
-      console.log(goodsyList)
       let totalPrice = bucket.map(e => {
         return (e.price)
       })
@@ -63,8 +67,9 @@ function App() {
 
 
 
+
   const goPrice = (e) => {
-    let price = bucket.filter(el => {
+    let price = rBucket.filter(el => {
       return (el.id.includes(e.target.id))
     })
     let originalPrice = goodsyList.filter(el => {{
@@ -89,7 +94,7 @@ function App() {
   }
 
   const downPrice = (e) => {
-    let price = bucket.filter(el => {
+    let price = rBucket.filter(el => {
       return (el.id.includes(e.target.id))
     })
     let originalPrice = goodsyList.filter(el => {{
@@ -106,14 +111,12 @@ function App() {
       county.price = originalPrice.price
       let pricee = total - originalPrice.price
       setTotal(pricee)
-
-
-      let changeIt = bucket.filter (el => { return (el.id != e.target.id)})
-      setRBucket(changeIt)
-      
       setBucket(bucketL - 1)
       originalPrice.show1 = 'show'
       originalPrice.show2 = 'hide'
+      setRBucket(rBucket.filter(el => el.id != e.target.id))
+      bucket = bucket.filter(el => el.id != e.target.id)
+
       return;
     }
     county.price = county.price - originalPrice.price 
