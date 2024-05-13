@@ -115,8 +115,7 @@ function App() {
       originalPrice.show1 = 'show'
       originalPrice.show2 = 'hide'
       setRBucket(rBucket.filter(el => el.id != e.target.id))
-      bucket = bucket.filter(el => el.id != e.target.id)
-
+      bucket.length = 0
       return;
     }
     county.price = county.price - originalPrice.price 
