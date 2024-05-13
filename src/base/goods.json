@@ -2,7 +2,7 @@
     {
         "id": "1",
         "title": "StarWars",
-        "poster": "/Busket/posters/starwars.jpg",
+        "poster": "/Buklet/posters/starwars.jpg",
         "price": 9500,
         "count": 1,
         "show1": "show",
