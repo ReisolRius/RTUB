@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "title": "StarWars",
+        "poster": "/Busket/posters/starwars.jpg",
+        "price": 9500,
+        "count": 1,
+        "show1": "show",
+        "show2": "hide"
+    },
+    {
+        "id": "2",
+        "title": "LegoCity",
+        "poster": "/Busket/posters/city.jpg",
+        "price": 6200,
+        "count": 1,
+        "show1": "show",
+        "show2": "hide"
+    },
+    {
+        "id": "3",
+        "title": "LegoCreator",
+        "poster": "/Busket/posters/legocreator.jpg",
+        "price": 2100,
+        "count": 1,
+        "show1": "show",
+        "show2": "hide"
+    },
+    {
+        "id": "4",
+        "title": "Лего Замок",
+        "poster": "/Busket/posters/zamok.png",
+        "price": 4400,
+        "count": 1,
+        "show1": "show",
+        "show2": "hide"
+    },
+    {
+        "id": "5",
+        "title": "Лего Майн",
+        "poster": "/Busket/posters/mine.jpeg",
+        "price": 9000,
+        "count": 1,
+        "show1": "show",
+        "show2": "hide"
+    },
+    {
+        "id": "6",
+        "title": "Лего Мото",
+        "poster": "/Busket/posters/moto.jpeg",
+        "price": 1500,
+        "count": 1,
+        "show1": "show",
+        "show2": "hide"
+    }
+]
