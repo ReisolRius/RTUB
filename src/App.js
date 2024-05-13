@@ -47,7 +47,7 @@ function App() {
         changeBtn.show1 = 'show'
         changeBtn.show2 = 'hide'
       }
-      // goodsyList = goodsyList.filter(el => { return (el.id != -1)})
+
       console.log(goodsyList)
       let totalPrice = bucket.map(e => {
         return (e.price)
@@ -116,7 +116,6 @@ function App() {
     let x = goodsyList.filter(el => {return (el.id.includes(e.target.id))})
     x = x.reduce((res, obj) => obj.id == e.target.id ? obj : res, {}); 
     x.count = x.count - 1
-    goodsyList = goodsyList.filter(el => el.id != -1)
     
     let pricee = total - originalPrice.price
     setTotal(pricee)
