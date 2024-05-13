@@ -17,6 +17,7 @@ function App() {
   const [isActive, setActive] = useState(false)
   const [bucketL, setBucket] = useState(0)
   const [changeBtn, setCHange] = useState('')
+  const [rBucket, setRBucket] = useState([])
 
   const goodsList = []
   goods.forEach(e => goodsList.push(e))
@@ -37,6 +38,7 @@ function App() {
   useEffect(() => {
     if (goody != '') {
       bucket.push(goody) 
+      setRBucket(bucket)
       console.log(goodsList)
       setBucket(bucketL + 1)
       setGoody('')
@@ -104,11 +106,12 @@ function App() {
       county.price = originalPrice.price
       let pricee = total - originalPrice.price
       setTotal(pricee)
-      const buklet = []
-      bucket.forEach(e => buklet.push(e))
-      bucket = buklet.filter (el => { return (el.id != e.target.id)})
+
+
+      let changeIt = bucket.filter (el => { return (el.id != e.target.id)})
+      setRBucket(changeIt)
+      
       setBucket(bucketL - 1)
-      console.log(originalPrice)
       originalPrice.show1 = 'show'
       originalPrice.show2 = 'hide'
       return;
@@ -158,7 +161,7 @@ function App() {
           <h1>Корзина</h1>
         </div>
         {
-          bucket.map(el => (
+          rBucket.map(el => (
             <div className="bucket__good"> 
               <p>{el.title}</p>
               <div className='goody__but'> 
